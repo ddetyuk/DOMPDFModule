@@ -1,4 +1,5 @@
 <?php
+
 /*
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -19,7 +20,7 @@
 
 namespace DompdfModule\View\Model;
 
-class PdfModelTest extends \PHPUnit_Framework_TestCase
+class PdfModelTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * System under test.
@@ -66,7 +67,7 @@ class PdfModelTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 

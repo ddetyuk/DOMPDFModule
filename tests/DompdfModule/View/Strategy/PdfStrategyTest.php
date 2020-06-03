@@ -1,4 +1,5 @@
 <?php
+
 /*
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -19,15 +20,15 @@
 
 namespace DompdfModule\View\Strategy;
 
-use Zend\Stdlib\ResponseInterface;
-use Zend\View\Model\ViewModel;
-use Zend\View\Resolver\TemplatePathStack;
-use Zend\View\Renderer\PhpRenderer;
-use Zend\View\ViewEvent;
-use Zend\Http\Response as HttpResponse;
 use DompdfModule\Framework\TestCase;
 use DompdfModule\View\Model\PdfModel;
 use DompdfModule\View\Renderer\PdfRenderer;
+use Laminas\Http\Response as HttpResponse;
+use Laminas\Stdlib\ResponseInterface;
+use Laminas\View\Model\ViewModel;
+use Laminas\View\Renderer\PhpRenderer;
+use Laminas\View\Resolver\TemplatePathStack;
+use Laminas\View\ViewEvent;
 
 class PdfStrategyTest extends TestCase
 {
@@ -160,7 +161,7 @@ class PdfStrategyTest extends TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
